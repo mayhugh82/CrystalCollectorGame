@@ -38,3 +38,23 @@ h1 {
   padding-right: 30px;
   padding-left: 10px;
 }
+
+#blue {
+    width: 150px;
+    height: 150px;
+}
+
+#red {
+    width: 150px;
+    height: 150px;
+}
+
+#green {
+    width: 150px;
+    height: 150px;
+}
+
+#yellow {
+    width: 150px;
+    height: 150px;
+}
