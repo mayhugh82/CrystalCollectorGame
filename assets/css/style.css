@@ -1,0 +1,40 @@
+body {
+  background-image: url(../images/more-leaves-on-green.png);
+}
+
+h1 {
+  background-color: peru;
+  color: white;
+  padding: 20px;
+  margin-right: 1280px;
+}
+
+.instructions {
+  background-color: rgb(216, 195, 176);
+  color: rgb(26, 114, 26);
+  margin-right: 1100px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 80px;
+  padding-left: 10px;
+}
+
+.info-row {
+  display: flex;
+}
+.target-number {
+  background-color: rgb(73, 155, 26);
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 200px;
+  margin-right: 10px;
+  flex-direction: row;
+}
+
+.score {
+  background-color: rgb(117, 208, 214);
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 30px;
+  padding-left: 10px;
+}
