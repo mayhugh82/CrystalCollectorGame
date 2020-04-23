@@ -24,57 +24,50 @@ $(document).ready(function () {
   // Here we created an on-click event that responds to button clicks of the crystal image.
   $("#blue").on("click", function () {
     points = points + blue;
-    $(".points").html(points)
+    $(".points").html(points);
+    checker();
   });
 
   $("#red").on("click", function () {
     points = points + red;
-    $(".points").html(points)
+    $(".points").html(points);
+    checker();
   });
 
   $("#green").on("click", function () {
     points = points + green;
-    $(".points").html(points)
+    $(".points").html(points);
+    checker();
   });
 
   $("#yellow").on("click", function () {
     points = points + yellow;
-    $(".points").html(points)
+    $(".points").html(points);
+    checker();
   });
 
-// copied from psychic hw
-//this function resest the game
-function reset() {
-  computerGuess =
-    computerChoices[Math.floor(Math.random() * computerChoices.length)];
-  guessesSoFar = [];
-  guessesLeft = 10;
-}
-
-// This logic determines the outcome of the game (win/loss/guesses left/ guesses so far), and increments the appropriate number
-if (userGuess === computerGuess) {
-  wins++;
-  reset();
-} else {
-  guessesSoFar.push(userGuess);
-  if (guessesLeft === 0) {
-    losses++;
-    reset();
-  } else {
-    guessesLeft--;
+  // copied from psychic hw
+  //this function resets the game
+  function reset() {
+    points = 0;
+    random = Math.floor(Math.random() * 101) + 19;
+    $(".target-number").html(random);
+    $(".points").html(points);
   }
-}
 
-// Hide the directions
-directionsText.textContent = "";
-
-// Display the user and computer guesses, and wins/losses/
-winsText.textContent = wins;
-lossesText.textContent = losses;
-guessesLeftText.textContent = guessesLeft;
-guessesSoFarText.textContent = guessesSoFar.join();
-
-
-
-
+  // This logic determines the outcome of the game (win/loss), and increments the appropriate number
+  function checker() {
+    if (points === random) {
+      wins++;
+      $("#wins").html(wins);
+      reset();
+    } else {
+      console.log(points, random);
+      if (points > random) {
+        losses++;
+        $("#losses").html(losses);
+        reset();
+      }
+    }
+  }
 });

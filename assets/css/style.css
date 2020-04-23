@@ -47,16 +47,14 @@ h1 {
 }
 
 .total_score {
-background-color: rgb(46, 158, 96);
-padding: 10px;
-margin-right: 1300px;
+  background-color: rgb(46, 158, 96);
+  padding: 10px;
+  margin-right: 1300px;
 }
 
 .points {
- background-color: rgb(46, 158, 96);
- padding: 10px;
-margin-right: 1300px;
-padding-bottom: 100px;
+  background-color: rgb(46, 158, 96);
+  padding: 10px;
+  margin-right: 1300px;
+  padding-bottom: 100px;
 }
-
-
