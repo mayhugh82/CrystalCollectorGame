@@ -26,5 +26,5 @@ The object of the game is to match your point to the random number provided at t
 
 ## Authors
 
-* **Diana Mayhugh** - *Initial work* - (https://mayhugh82.github.io/Word-Guess-Game/)
-* With assistance from my tutor Paulo Razon
+* **Diana Mayhugh** - *Initial work* - (https://mayhugh82.github.io/unit-4-game/)
+* With assistance from my tutor **Paolo Razon**
